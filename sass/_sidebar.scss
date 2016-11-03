@@ -1,6 +1,17 @@
 .sidebar {
-	width: 30%;
-	float: left;
+	margin:0 auto;
+	margin-left:1rem;
+	padding-top:2rem;
+	width: 25%;
+	text-align:center;
+	a{
+		color:rgb(128, 127, 127);
+		transition: color 0.4s ease;
+		&:hover {
+			color:rgb(196, 149, 62);
+		}
+
+	}
 	ul {
 		margin: 0;
 		padding: 0;
@@ -9,3 +20,22 @@
 		}
 	}
 }
+
+.widget-title {
+	text-transform:uppercase;
+	font-size:1rem;
+	letter-spacing:2px;
+	color:rgb(68, 68, 68);
+	// ul {
+	// 	li {
+	// 		a{
+	// 			color:rgb(128, 127, 127);
+	// 		}
+	// 	}
+	// }
+}
+// .cat-item {
+// 	a{
+// 		color:rgb(128, 127, 127);
+// 	}
+// }

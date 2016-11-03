@@ -12,23 +12,21 @@
           <?php endwhile; // end the loop?>
     </div> <!-- /,content -->
   </div>
-  <div class="about-wrapper">
-    <div class="about-us">
-      <?php // Start the loop ?>
-            <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-            
-            <?php endwhile; // end the loop?>
-      
+  <div class="about">
+    <section class="about-us wrapper">
+          <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+           <div class="item">
+            <?php $icon_image = get_field('about_us_image') ?>
+             <img src="<?php echo $icon_image['url'] ?> " alt="">
+            <div class= about-us-div>
+              <h3><?php the_field('about_us'); ?> </h3>
+              <hr class= "center-diamond">
+              <p><?php the_field('about_us_text'); ?></p>
+            </div>
+           </div>
+         <?php endwhile ?>
+     </section>
     </div>
-  </div>
-  <div class="main">
-    <div class="container">
-
-     
-
-      <?php get_sidebar(); ?>
-
-    </div> <!-- /.container -->
-  </div> <!-- /.main -->
+  
 
 <?php get_footer(); ?>
