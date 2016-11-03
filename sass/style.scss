@@ -13,6 +13,8 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'fonts';
+@import 'frontpage';
 /*
 ====================================
 Default Styling
@@ -32,17 +34,15 @@ body {
 	margin: 0 auto;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
-}
+// .content {
+// 	float: left;
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
 
 .full {
 	width: 100%;
 }
-
-
 
 
 

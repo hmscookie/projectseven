@@ -1,6 +1,14 @@
 <footer>
-  <div class="container">
+	<div class="container">
+  <p>99 DAVISVILLE AVE, TORONTO ONTARIO, CANADA, </p>
+  <img src="<?php  ?> " alt="">
+  <p>416-802-4634</p>
+  <p>savkarsh@gmail.com</p>
     <p>&copy; Sarah Karsh <?php echo date('Y'); ?></p>
+    <?php wp_nav_menu( array(
+      'container' => false,
+      'theme_location' => 'secondary'
+    )); ?>
   </div>
 </footer> 
 

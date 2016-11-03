@@ -1,14 +1,47 @@
+header {
+	background-color: rgba(12, 12, 12,0.9);
+	// padding:5px;
+	.container {
+		display:flex;
+		align-items:center;
+	}
+	h1{
+		margin:10px;
+		font-family: 'Montserrat', sans-serif;
+		a{
+			color:white;
+			padding:20px;
+			transition: color 0.4s ease;
+			&:hover {
+			color:rgb(196, 149, 62);
+			}
+		}
+		flex: 1 0 auto;
+	}
+}
+
 ul.menu {
 	margin: 0;
 	padding: 0;
+	li~li { 
+		border-left: 1px solid white; 
+	}
 	li {
 		display: inline;
 		margin-right: 10px;
+		font-family: 'Montserrat', sans-serif;
+		transition: color 0.4s ease;
+		&:hover {
+			color:rgb(196, 149, 62);
+			}
 		a {
 			color: #333;
 			padding: 10px;
-			background: #333;
 			color: white;
+			transition: color 0.4s ease;
+			&:hover {
+			color:rgb(196, 149, 62);
+			}
 		}
 	}
 }
