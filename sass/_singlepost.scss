@@ -1,0 +1,33 @@
+.post_container {
+	margin:0 auto;
+	width:80%;
+	max-width:1200px;
+	.blog_content {
+		background:white;
+		padding:1rem;
+		background:rgb(241, 241, 241);
+	}
+	.entry-meta {
+		span {
+		text-align:center;
+		display:block;
+		padding-bottom:10px;
+		&:nth-child(2n) {
+			font-style:italic;
+			}
+		}
+	}
+	h1 {
+		text-align:center;
+		padding-top: 2rem;
+		font-size:1.3rem;
+    	font-weight: 400;
+   		text-transform: uppercase;
+   		font-family: 'Crimson Text', serif;
+   		}
+	
+}
+// .meta-prep {
+// 	text-align:center;
+// 	display:block;
+// }

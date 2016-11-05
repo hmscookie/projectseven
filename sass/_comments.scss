@@ -1,3 +1,4 @@
+
 #comments .navigation {
 	padding: 0 0 18px;
 }
@@ -166,6 +167,7 @@ h3#reply-title {
 	}
 	textarea {
 		width: 98%;
+		border-radius:5px;
 	}
 	dt {
 		color: #888888;
@@ -183,8 +185,21 @@ h3#reply-title {
 	.form-submit {
 		margin: 0 0 24px;
 		input {
+		    border: 2px solid #e6ae48;
+		    background: #e6ae48;
+		    color: #ffffff;
+		    margin: 25px 0 0;
+		    padding: 10px 15px;
 			width: auto;
-			font-size: 14px;
+			font-size: 1.1rem;
+			background:#e6ae48;
+			text-transform:uppercase;
+			font-family: 'Montserrat', sans-serif;
+			transition: all ease 0.2s;
+			&:hover{
+				background:transparent;
+				color: #888888;
+			}
 		}
 	}
 	dl {
