@@ -19,7 +19,13 @@ function theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// add option to upload logo in theme customizer
-	add_theme_support( 'custom-logo' );
+	add_theme_support( 'custom-logo', array(
+	'height'      => 100,
+	'width'       => 400,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+) );
 
 
 	/* This theme uses wp_nav_menu() in one location.
@@ -53,7 +59,7 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
-	wp_enqueue_style('googlefonts', 'link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Montserrat:400,700');
+	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Montserrat:400,700');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');

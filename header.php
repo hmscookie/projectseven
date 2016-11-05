@@ -16,9 +16,11 @@
 <header>
   <div class="container">
     <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
+      <?php 
+   $custom_logo_id = get_theme_mod( 'custom_logo' );
+   $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+      ?>
+<img src="<?php echo $image[0]; ?>" alt="">
     </h1>
 
     <?php wp_nav_menu( array(
